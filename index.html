@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Technika 6.0 · The Wizard's Grimoire</title>
+<meta name="description" content="Technika 6.0 – the techno-cultural fest of ARKA JAIN University. Open the grimoire, find your path, pick your arena.">
+<meta name="theme-color" content="#0b0a1f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="sparkles" aria-hidden="true"></canvas>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top"><span class="brand-rune">✦</span> Technika <b>6.0</b></a>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav id="menu">
+    <a href="#about">About</a>
+    <a href="#pathfinder">Find your path</a>
+    <a href="#events">Events</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#team">Team</a>
+    <a href="#contact">Contact</a>
+    <a class="btn btn-gold small" id="navRegister" href="#" target="_blank" rel="noopener">Register</a>
+  </nav>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">ARKA JAIN University · School of Engineering &amp; IT</p>
+      <h1>Open the <span class="gold">Grimoire.</span><br>Technika 6.0 awaits.</h1>
+      <p class="lead">Where creativity collides with technology. Code, robotics, AI, hardware and design: pick your spell and cast it on the arena.</p>
+      <p class="meta">📅 <b id="heroDates"></b> &nbsp;·&nbsp; <a id="heroMap" href="#" target="_blank" rel="noopener">📍 ARKA JAIN University</a></p>
+      <div class="cta">
+        <a class="btn btn-gold" id="heroRegister" href="#" target="_blank" rel="noopener">Register now →</a>
+        <a class="btn btn-ghost" href="#pathfinder">Find my path</a>
+        <a class="btn btn-ghost" id="heroBrochure" href="#" target="_blank" rel="noopener">Brochure 📄</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>
+      <div class="orb"><span id="orbCount">45+</span><small>events</small></div>
+    </div>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section class="countdown" aria-live="off">
+    <p class="eyebrow" id="cdLabel">The portal opens in</p>
+    <div class="potions">
+      <div class="potion"><b id="cd-d">00</b><span>Days</span></div>
+      <div class="potion"><b id="cd-h">00</b><span>Hours</span></div>
+      <div class="potion"><b id="cd-m">00</b><span>Mins</span></div>
+      <div class="potion"><b id="cd-s">00</b><span>Secs</span></div>
+    </div>
+    <p class="small-note">Day 1 kickoff · 20 Nov 2026 · 09:00 AM</p>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="sec">
+    <h2>A playground for <span class="gold">innovators</span></h2>
+    <div class="about-grid">
+      <p>Technika 6.0 is the flagship technical extravaganza of ARKA JAIN University's School of Engineering &amp; IT. Six editions in, it is still built around one belief: creativity meets technology when students get room to run.</p>
+      <p>Expect coding battles, robotics arenas, hardware hackfests, AI quizathons, cultural nights and expert talks, with a campus wired end to end with energy.</p>
+      <ul class="stats">
+        <li><b>45+</b><span>Events</span></li>
+        <li><b>2</b><span>Days</span></li>
+        <li><b>6th</b><span>Edition</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PATHFINDER -->
+  <section id="pathfinder" class="sec">
+    <h2>Sorting <span class="gold">Spell</span></h2>
+    <p class="sub">Which kind of wizard are you? Tap a path and the grimoire lights up matching events.</p>
+    <div class="paths" id="paths" role="group" aria-label="Choose your path">
+      <button class="path" data-path="code"><span>⌨️</span><b>Code Mage</b><small>Algorithms, web, apps, CTF</small></button>
+      <button class="path" data-path="build"><span>🔧</span><b>Artificer</b><small>Robots, circuits, hardware</small></button>
+      <button class="path" data-path="design"><span>🎨</span><b>Illusionist</b><small>UI, design, frontend</small></button>
+      <button class="path" data-path="brain"><span>🧠</span><b>Seer</b><small>Quizzes, AI, problem solving</small></button>
+    </div>
+    <p class="path-result" id="pathResult" role="status"></p>
+  </section>
+
+  <!-- EVENTS -->
+  <section id="events" class="sec">
+    <h2>Pick your <span class="gold">arena</span></h2>
+    <div class="toolbar">
+      <input id="search" type="search" placeholder="Search a spell… (e.g. robo, code, AI)" aria-label="Search events">
+      <div class="chips" id="dayChips" role="group" aria-label="Filter by day">
+        <button class="chip on" data-day="all">All</button>
+        <button class="chip" data-day="1">Day 1</button>
+        <button class="chip" data-day="2">Day 2</button>
+      </div>
+    </div>
+    <p class="count" id="count"></p>
+    <div class="cards" id="cards"></div>
+    <p class="small-note center">Showing the events published so far. Full list of 45+ events and rules is in the official brochure.</p>
+  </section>
+
+  <!-- SCHEDULE -->
+  <section id="schedule" class="sec">
+    <h2>Two days, <span class="gold">one fest</span></h2>
+    <div class="tabs" role="tablist">
+      <button class="tab on" role="tab" data-day="1">Day 1 · 20 Nov</button>
+      <button class="tab" role="tab" data-day="2">Day 2 · 21 Nov</button>
+    </div>
+    <ol class="timeline" id="timeline"></ol>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="sec" id="gallery">
+    <h2>Flashbacks from <span class="gold">past editions</span></h2>
+    <div class="strip" id="strip"></div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="team" class="sec">
+    <h2>Behind the <span class="gold">fest</span></h2>
+    <div id="teamWrap"></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="sec">
+    <h2>Send an <span class="gold">owl</span></h2>
+    <div class="contact-grid">
+      <div>
+        <p class="sub left">Questions about registration, rules, sponsorship or campus arrival? Reach the core team.</p>
+        <ul class="people" id="people"></ul>
+        <p class="mail">✉️ <a id="mailLink" href="#"></a></p>
+        <div class="socials" id="socials"></div>
+      </div>
+      <form id="form" class="form" novalidate>
+        <label>Name<input name="name" required maxlength="80" autocomplete="name"></label>
+        <label>Email<input name="email" type="email" required maxlength="120" autocomplete="email"></label>
+        <label>Message<textarea name="message" rows="4" required maxlength="600"></textarea></label>
+        <input type="text" name="website" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+        <button class="btn btn-gold" id="send" type="submit">Send enquiry</button>
+        <p class="form-msg" id="formMsg" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>© 2026 ARKA JAIN University · School of Engineering &amp; IT · Technika 6.0</p>
+  <p class="small-note">Official site: <a href="https://arkajainuniversity.ac.in" target="_blank" rel="noopener">arkajainuniversity.ac.in</a></p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

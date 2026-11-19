@@ -1,0 +1,96 @@
+{
+  "fest": {
+    "name": "Technika 6.0",
+    "dates": "20 & 21 November 2026",
+    "start": "2026-11-20T09:00:00+05:30",
+    "venue": "ARKA JAIN University, Jamshedpur",
+    "mapUrl": "https://maps.google.com/?q=ARKA+JAIN+University+Jamshedpur",
+    "registerUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeSEsTz8-w8P47xiPyfjaR8He-bPhE3aG-l_7ds9hkwTRMjCA/viewform?usp=header",
+    "brochureUrl": "https://drive.google.com/file/d/1-g7Yprsh08tiBgp-xHWKInLqNxO1YFs_/view?usp=sharing",
+    "email": "technika@arkajainuniversity.ac.in"
+  },
+  "events": [
+    { "id": "code-buster", "name": "Code Buster", "days": [1], "time": "10:30 AM", "venue": "C-Block Lab 1", "path": ["code", "design"], "desc": "A three-round, two-day solo or duo frontend (HTML/CSS) coding and creative problem solving adventure." },
+    { "id": "red-tech", "name": "Red Tech", "days": [1], "time": "11:00 AM", "venue": "Main Seminar Hall", "path": ["build"], "desc": "Design and present a tech-based hardware prototype using microcontrollers like Arduino or Raspberry Pi." },
+    { "id": "robo-wars", "name": "Robo Wars", "days": [2], "time": "02:00 PM", "venue": "Outdoor Robo Arena", "path": ["build"], "desc": "Build a combat robot to push the opposing robot out of the circular arena or flip it over in one-on-one combat." },
+    { "id": "robo-race", "name": "Robo Race", "days": [1], "time": "01:30 PM", "venue": "Robo Race Track", "path": ["build"], "desc": "Design a manually controlled robot to navigate an obstacle-laden race track in the shortest possible time." },
+    { "id": "robo-pick-n-place", "name": "Robo Pick & Place", "days": [2], "time": "11:00 AM", "venue": "Robo Pick Arena", "path": ["build"], "desc": "Design a pick-and-place robot to pick up wooden cubes and place them in designated target spots." },
+    { "id": "intelliquest", "name": "IntelliQuest", "days": [1], "time": "02:00 PM", "venue": "E-Block Room 102", "path": ["brain"], "desc": "Develop a creative, practical, and implementable solution to a real-world problem within a 3-hour time limit." },
+    { "id": "brainstorm-battle", "name": "BrainStorm Battle", "days": [1], "time": "03:30 PM", "venue": "Main Auditorium", "path": ["brain"], "desc": "A dynamic quiz competition testing participants in Science, Engineering, Traditions, GK, and current affairs." },
+    { "id": "circuit-crafter", "name": "Circuit Crafter", "days": [2], "time": "10:00 AM", "venue": "Electronics Lab", "path": ["build"], "desc": "Design, assemble, and demonstrate a working electronic circuit on a breadboard from basic components." },
+    { "id": "electrofix-challenge", "name": "Electrofix Challenge", "days": [2], "time": "01:00 PM", "venue": "Electrical Engineering Lab", "path": ["build"], "desc": "Identify, troubleshoot, and repair faulty electrical and electronic circuits within the time limit." },
+    { "id": "junkyard-wars", "name": "Junkyard Wars", "days": [2], "time": "11:00 AM", "venue": "Workshop Yard", "path": ["build"], "desc": "Transform scrap and waste materials into innovative engineering models under time constraints." },
+    { "id": "ai-quizathon", "name": "AI Quizathon", "days": [1], "time": "01:00 PM", "venue": "C-Block Lab 3", "path": ["brain", "code"], "desc": "Test your knowledge of Artificial Intelligence and Machine Learning concepts and algorithms." },
+    { "id": "ecoai-challenge", "name": "EcoAI Challenge", "days": [2], "time": "09:30 AM", "venue": "C-Block Lab 3", "path": ["brain", "code"], "desc": "Leverage AI to develop smart and sustainable solutions for environmental problems and pollution." },
+    { "id": "project-model-exhibition", "name": "Project Model Exhibition", "days": [1, 2], "time": "All Day", "venue": "Exhibition Hall", "path": ["build"], "desc": "Present working or demonstrative project models based on Science, Society, and Environment." },
+    { "id": "coding-ladder", "name": "Coding Ladder", "days": [1], "time": "01:00 PM", "venue": "C-Block Lab 2", "path": ["code"], "desc": "A competitive coding battle focused on solving DSA problems of increasing difficulty on a PC." },
+    { "id": "web-wizard", "name": "Web Wizard", "days": [2], "time": "10:00 AM", "venue": "C-Block Lab 1", "path": ["code", "design"], "desc": "Build a beautiful and responsive website based on the Technika 6.0 theme under a 5-hour time limit." },
+    { "id": "cyber-shield", "name": "Cyber Shield", "days": [2], "time": "01:00 PM", "venue": "Cyber Security Lab", "path": ["code"], "desc": "A Capture The Flag (CTF) cybersecurity challenge covering web security, reverse engineering, and cryptography." },
+    { "id": "app-attack", "name": "App Attack", "days": [1], "time": "02:00 PM", "venue": "C-Block Lab 4", "path": ["code", "design"], "desc": "Develop a functional mobile application prototype aligning with a provided problem statement." },
+    { "id": "data-dash", "name": "Data Dash", "days": [2], "time": "11:00 AM", "venue": "C-Block Lab 2", "path": ["code", "brain"], "desc": "Solve a dataset-based problem using machine learning, data analytics, and data visualization." },
+    { "id": "design-dash", "name": "Design Dash", "days": [1], "time": "03:00 PM", "venue": "Design Studio", "path": ["design"], "desc": "Create an original user interface design on Figma or Adobe XD based on a given problem statement." },
+    { "id": "load-bridging", "name": "Load Bridging", "days": [1, 2], "time": "All Day", "venue": "Civil Workshop", "path": ["build"], "desc": "Design and construct a lightweight bridge using ice cream sticks and glue that can withstand maximum load." }
+  ],
+  "schedule": {
+    "1": [
+      { "time": "10:00 AM", "title": "Inauguration", "desc": "Grand opening ceremony and official commencement of Technika 2026.", "key": true },
+      { "time": "11:00 AM", "title": "Project Model Exhibition", "desc": "Showcase of working models, hardware prototypes, and engineering innovations." },
+      { "time": "12:00 PM", "title": "Events Start", "desc": "Flag-off for all technical, non-technical, and competitive event tracks." },
+      { "time": "12:30 PM", "title": "Solo Ramp Walk", "desc": "High-fashion solo runway showdown celebrating personality, style, and couture." },
+      { "time": "04:30 PM", "title": "Day 1 Closes", "desc": "Conclusion of Day 1 track heats and preparation for Day 2 finals.", "key": true }
+    ],
+    "2": [
+      { "time": "10:00 AM", "title": "Events Start", "desc": "Day 2 championship rounds, robotics leagues, and technical arenas resume." },
+      { "time": "10:00 AM", "title": "Group Ramp Walk", "desc": "Themed runway fashion choreography and synchronized ensemble showdown." },
+      { "time": "01:00 PM", "title": "Events Wrap-Up", "desc": "Culmination of all competitive events and final evaluation by judges.", "key": true },
+      { "time": "01:10 PM", "title": "Valedictory & Prize Distribution", "desc": "Prize distribution, felicitation of champions, and honoring distinguished guests.", "key": true },
+      { "time": "06:00 PM", "title": "Live Concert", "desc": "Star night musical concert, dynamic DJ performance, and grand festival celebration." }
+    ]
+  },
+  "team": {
+    "Convenors": [
+      { "name": "Dr. Arvind Kumar Pandey", "role": "Dean, School of Engineering & IT" },
+      { "name": "Dr. Ashwini Kumar", "role": "Asst. Dean, School of Engineering & IT" }
+    ],
+    "Faculty Coordinators": [
+      { "name": "Prof. Mamatha Vayelapelli", "role": "Assistant Professor" },
+      { "name": "Dr. Viranshu Kumar", "role": "Assistant Professor" },
+      { "name": "Prof. Syed Rashid Anwar", "role": "Assistant Professor" },
+      { "name": "Prof. Divya Paikaray", "role": "Assistant Professor" },
+      { "name": "Dr. Prem Nath Suman", "role": "Assistant Professor" },
+      { "name": "Prof. Sayantani De", "role": "Assistant Professor" },
+      { "name": "Prof. Astik Pradhan", "role": "Assistant Professor" },
+      { "name": "Dr. Padmaja Tripathy", "role": "Associate Professor" }
+    ],
+    "Student Team": [
+      { "name": "Adeeb Razi", "role": "Student Coordinator" },
+      { "name": "Anjali Singh", "role": "Administration" },
+      { "name": "Sanchit Agarwal", "role": "Technical Lead" },
+      { "name": "Sonali Mahato", "role": "Social Media Lead" },
+      { "name": "Nikita Mishra", "role": "Content Lead" },
+      { "name": "Aaditya Singh", "role": "Design Lead" },
+      { "name": "Sohail Khan", "role": "Co Design Lead" },
+      { "name": "Awesh Hussain", "role": "Event Coordinator" },
+      { "name": "Ankit Raj", "role": "Sponsorship Lead" },
+      { "name": "Rishav Kr Singh", "role": "Co Transport Lead" },
+      { "name": "Harsh Pathak", "role": "Transport Lead" },
+      { "name": "Ishika Shrivastava", "role": "Co Content Lead" },
+      { "name": "S Suman Rao", "role": "Creative Lead" },
+      { "name": "Prince Kumar", "role": "Co Outreach Lead" },
+      { "name": "Anish Kr Singh", "role": "Outreach Lead" }
+    ]
+  },
+  "contacts": [
+    { "role": "Convenor", "name": "Dr. Ashwini Kumar", "phone": "+91 82103 53795" },
+    { "role": "Faculty Coordinator", "name": "Prof. Mamatha V.", "phone": "+91 78588 12586" },
+    { "role": "Student Coordinator", "name": "Adeeb Razi", "phone": "+91 62067 82574" }
+  ],
+  "socials": [
+    { "label": "Technika Instagram", "url": "https://instagram.com/technika_aju" },
+    { "label": "Technika LinkedIn", "url": "https://linkedin.com/company/technika-aju" },
+    { "label": "SOEIT Instagram", "url": "https://instagram.com/soeit_aju" },
+    { "label": "AJU Website", "url": "https://arkajainuniversity.ac.in" },
+    { "label": "AJU Instagram", "url": "https://instagram.com/arkajainuniversity" }
+  ],
+  "gallery": ["021A0003", "021A0018", "021A0074", "021A0096", "021A0138", "021A0221", "021A0256", "021A9946"]
+}
